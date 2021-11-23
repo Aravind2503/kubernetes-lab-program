@@ -1,0 +1,9 @@
+appname = appname+last3usndigits
+portnumber = 9+[last3usndigits]
+
+
+kubectl create deployment nodeapp --image=[]
+kubectl expose deployment/nodeapp --type=LoadBalancer --port=8080
+
+or try
+kubectl expose deployment/nodeapp --type=NodePort --port=8080
